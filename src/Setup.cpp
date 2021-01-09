@@ -50,11 +50,11 @@ Setup::Setup() :
 
 void Setup::reinit()
 {
-	rightLaserPin = 5;
-	leftLaserPin = 4;
-	motorEnablePin = 0;
-	motorStepPin = 7;
-	motorDirPin = 1;
+	rightLaserPin = 15;
+	leftLaserPin = 14;
+	motorEnablePin = 12; // M1_en   = 12; M2_en   = 4
+	motorStepPin = 19;   // M1_step = 19; M2_step = 18
+	motorDirPin = 13;    // M1_dir  = 13; M2_dir  = 8
 	motorDirPinValue = 0;
 	laserOnValue = 1;
 	stepsPerRevolution = 3200;
